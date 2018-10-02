@@ -8,12 +8,13 @@ class App < Sinatra::Base
   end
 
   get '/'  do
+    @session = session
     erb :index
   end
 
   post '/checkout' do
     @params = params
-    @params[:item]
+    session[:@params] = @params[:item]
 
   end
 
