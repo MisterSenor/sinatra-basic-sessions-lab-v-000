@@ -13,6 +13,6 @@ class App < Sinatra::Base
 
   post '/checkout' do
     @params = params
-  end 
+  end
 
 end
