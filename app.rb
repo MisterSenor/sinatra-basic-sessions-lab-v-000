@@ -8,7 +8,6 @@ class App < Sinatra::Base
   end
 
   get '/'  do
-    erb :'./views/index'
   end
 
 end
